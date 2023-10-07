@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'gsystem-whatsapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FF7BAECC91BB41B1AE70844ADB3FB5E5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2E7E322387D441C591EF0752D332CE98 }}
           package: .
