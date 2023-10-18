@@ -458,7 +458,8 @@ class WhatsAppInstance {
         const data = await this.instance.sock?.sendMessage(
             this.getWhatsAppId(to),
             {
-                mimetype: file.mimetype + (type === 'audio' ? ";  codecs=opus" : ""),
+                mimetype:
+                    file.mimetype + (type === 'audio' ? ';  codecs=opus' : ''),
                 [type]: file.buffer,
                 caption: caption,
                 ptt: type === 'audio' ? true : false,
