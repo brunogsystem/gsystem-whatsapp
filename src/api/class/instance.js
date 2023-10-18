@@ -459,7 +459,7 @@ class WhatsAppInstance {
             this.getWhatsAppId(to),
             {
                 mimetype:
-                    file.mimetype + (type === 'audio' ? ';  codecs=opus' : ''),
+                    file.mimetype + (type === 'audio' ? '; codecs=opus' : ''),
                 [type]: file.buffer,
                 caption: caption,
                 ptt: type === 'audio' ? true : false,
